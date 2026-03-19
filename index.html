@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Sports Center | Premium Gym & Fitness Training</title>
+    <meta name="description" content="Build strength, unlock your best body at Fitness Sports Center. Expert trainers, premium equipment, and results-driven programs. Join 500+ active members today.">
+    <meta name="keywords" content="gym, fitness, personal training, strength training, bodybuilding, membership, fitness center">
+    <meta name="author" content="Fitness Sports Center">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+</head>
+<body>
+
+    <!-- ============================================= -->
+    <!-- NAVBAR -->
+    <!-- ============================================= -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar__container">
+            <a href="#" class="navbar__logo" id="nav-logo">
+                <img src="assets/images/logo.jpg" alt="Fitness Sports Center Logo" class="navbar__logo-img">
+            </a>
+
+            <div class="navbar__actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode">
+                    <!-- Sun Icon (Default hidden) -->
+                    <svg class="icon-sun" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <!-- Moon Icon -->
+                    <svg class="icon-moon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+
+                <button class="navbar__toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                    <span class="navbar__toggle-bar"></span>
+                    <span class="navbar__toggle-bar"></span>
+                    <span class="navbar__toggle-bar"></span>
+                </button>
+            </div>
+
+            <ul class="navbar__menu" id="nav-menu">
+                <li><a href="#hero" class="navbar__link active" id="nav-home">Home</a></li>
+                <li><a href="#about" class="navbar__link" id="nav-about">About</a></li>
+                <li><a href="#services" class="navbar__link" id="nav-services">Services</a></li>
+                <li><a href="#plans" class="navbar__link" id="nav-plans">Plans</a></li>
+                <li><a href="#trainers" class="navbar__link" id="nav-trainers">Trainers</a></li>
+                <li><a href="#contact" class="navbar__link" id="nav-contact">Contact</a></li>
+            </ul>
+
+            <a href="#plans" class="btn btn--primary navbar__cta" id="nav-join-btn">Join Now</a>
+        </div>
+    </nav>
+
+
+    <!-- ============================================= -->
+    <!-- HERO SECTION -->
+    <!-- ============================================= -->
+    <section class="hero" id="hero">
+        <div class="hero__bg">
+            <img src="assets/images/hero-bg.png" alt="Athlete performing deadlift" class="hero__bg-img">
+            <div class="hero__overlay"></div>
+        </div>
+
+        <div class="container hero__container">
+            <div class="hero__content">
+                <span class="hero__label">
+                    <span class="hero__label-icon">⚡</span>
+                    Premium Fitness Training
+                </span>
+
+                <h1 class="hero__title">
+                    Build Strength.<br>
+                    <span class="hero__title-accent">Unlock Your Best Body.</span>
+                </h1>
+
+                <p class="hero__text">
+                    Join a powerful fitness community with expert trainers, premium equipment, and results-driven programs designed to transform your body and confidence.
+                </p>
+
+                <div class="hero__actions">
+                    <a href="#plans" class="btn btn--primary btn--lg" id="hero-join-btn">
+                        Join Now
+                        <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#plans" class="btn btn--outline btn--lg" id="hero-plans-btn">View Membership Plans</a>
+                </div>
+
+                <div class="hero__stats">
+                    <div class="hero__stat">
+                        <span class="hero__stat-number" data-target="500">0</span><span class="hero__stat-plus">+</span>
+                        <span class="hero__stat-label">Active Members</span>
+                    </div>
+                    <div class="hero__stat-divider"></div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number" data-target="20">0</span><span class="hero__stat-plus">+</span>
+                        <span class="hero__stat-label">Professional Trainers</span>
+                    </div>
+                    <div class="hero__stat-divider"></div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number" data-target="10">0</span><span class="hero__stat-plus">+</span>
+                        <span class="hero__stat-label">Training Programs</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sticky-mascot">
+                <svg viewBox="0 0 100 100" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                        <!-- Left Leg -->
+                        <path stroke-width="8">
+                            <animate attributeName="d" 
+                                     values="M 50 65 L 45 80 L 40 95; M 50 75 L 30 85 L 40 95; M 50 65 L 45 80 L 40 95" 
+                                     dur="1.5s" repeatCount="indefinite" />
+                        </path>
+                        <!-- Right Leg -->
+                        <path stroke-width="8">
+                            <animate attributeName="d" 
+                                     values="M 50 65 L 55 80 L 60 95; M 50 75 L 70 85 L 60 95; M 50 65 L 55 80 L 60 95" 
+                                     dur="1.5s" repeatCount="indefinite" />
+                        </path>
+                        
+                        <!-- Torso & Head Group -->
+                        <g>
+                            <animateTransform attributeName="transform" type="translate" values="0,0; 0,10; 0,0" dur="1.5s" repeatCount="indefinite" />
+                            <!-- Torso -->
+                            <line x1="50" y1="35" x2="50" y2="65" stroke-width="8"/>
+                            <!-- Head -->
+                            <circle cx="50" cy="22" r="9" fill="currentColor"/>
+                            
+                            <!-- Left Arm & Dumbbell -->
+                            <g stroke="var(--color-gold)">
+                                <path stroke-width="6">
+                                    <animate attributeName="d" 
+                                             values="M 50 40 L 30 40 L 30 15; M 50 40 L 25 50 L 25 25; M 50 40 L 30 40 L 30 15" 
+                                             dur="1.5s" repeatCount="indefinite" />
+                                </path>
+                                <g>
+                                    <animateTransform attributeName="transform" type="translate" values="0,0; -5,10; 0,0" dur="1.5s" repeatCount="indefinite" />
+                                    <rect x="22" y="5" width="16" height="10" rx="3" fill="currentColor" stroke="none"/>
+                                </g>
+                            </g>
+
+                            <!-- Right Arm & Dumbbell -->
+                            <g stroke="var(--color-gold)">
+                                <path stroke-width="6">
+                                    <animate attributeName="d" 
+                                             values="M 50 40 L 70 40 L 70 15; M 50 40 L 75 50 L 75 25; M 50 40 L 70 40 L 70 15" 
+                                             dur="1.5s" repeatCount="indefinite" />
+                                </path>
+                                <g>
+                                    <animateTransform attributeName="transform" type="translate" values="0,0; 5,10; 0,0" dur="1.5s" repeatCount="indefinite" />
+                                    <rect x="62" y="5" width="16" height="10" rx="3" fill="currentColor" stroke="none"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================= -->
+    <!-- ABOUT SECTION -->
+    <!-- ============================================= -->
+    <section class="about" id="about">
+        <div class="container about__container">
+            <div class="about__image-wrapper reveal-left">
+                <img src="assets/images/about-gym.png" alt="Premium gym interior" class="about__image">
+                <div class="about__image-accent"></div>
+            </div>
+
+            <div class="about__content reveal-right">
+                <span class="section-label">About Us</span>
+                <h2 class="section-title">More Than a Gym,<br><span class="text-accent">A Place to Transform</span></h2>
+                <p class="about__text">
+                    Fitness Sports Center is a motivating, supportive, and professional environment focused on strength, health, discipline, and long-term results. We believe in pushing limits, building confidence, and creating champions — on and off the gym floor.
+                </p>
+
+                <div class="about__highlights">
+                    <div class="about__highlight">
+                        <div class="about__highlight-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="about__highlight-title">Certified Trainers</h4>
+                            <p class="about__highlight-desc">Professionally certified coaches with years of experience</p>
+                        </div>
+                    </div>
+
+                    <div class="about__highlight">
+                        <div class="about__highlight-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="about__highlight-title">Premium Equipment</h4>
+                            <p class="about__highlight-desc">Top-tier machines and free weights from leading fitness brands</p>
+                        </div>
+                    </div>
+
+                    <div class="about__highlight">
+                        <div class="about__highlight-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="about__highlight-title">Personalized Fitness Plans</h4>
+                            <p class="about__highlight-desc">Custom programs tailored to your unique goals and body type</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================= -->
+    <!-- SERVICES SECTION -->
+    <!-- ============================================= -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-label">Our Services</span>
+                <h2 class="section-title">What We <span class="text-accent">Offer</span></h2>
+                <p class="section-subtitle">Premium fitness services designed to help you achieve your goals faster</p>
+            </div>
+
+            <div class="services__grid">
+                <div class="service-card reveal-up" id="service-strength">
+                    <div class="service-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M6.5 6.5h11M6.5 17.5h11M4 10h2.5v4H4a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zM17.5 10H20a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2.5v-4zM6.5 8h0M6.5 16h0M17.5 8h0M17.5 16h0"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Strength Training</h3>
+                    <p class="service-card__desc">Build muscle, increase power, and improve endurance with expert-guided strength programs.</p>
+                    <div class="service-card__border"></div>
+                </div>
+
+                <div class="service-card reveal-up" id="service-cardio">
+                    <div class="service-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Cardio Zone</h3>
+                    <p class="service-card__desc">Boost stamina and heart health with modern cardio equipment and structured routines.</p>
+                    <div class="service-card__border"></div>
+                </div>
+
+                <div class="service-card reveal-up" id="service-personal">
+                    <div class="service-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Personal Training</h3>
+                    <p class="service-card__desc">Work one-on-one with certified coaches for faster and more focused progress.</p>
+                    <div class="service-card__border"></div>
+                </div>
+
+                <div class="service-card reveal-up" id="service-group">
+                    <div class="service-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="7" width="20" height="15" rx="2" ry="2"/><polyline points="17 2 12 7 7 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Group Fitness Classes</h3>
+                    <p class="service-card__desc">Stay motivated through energetic classes designed for all fitness levels.</p>
+                    <div class="service-card__border"></div>
+                </div>
+
+                <div class="service-card reveal-up" id="service-nutrition">
+                    <div class="service-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Nutrition Guidance</h3>
+                    <p class="service-card__desc">Support your workouts with practical meal and nutrition advice from our experts.</p>
+                    <div class="service-card__border"></div>
+                </div>
+
+                <div class="service-card reveal-up" id="service-weightloss">
+                    <div class="service-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Weight Loss Programs</h3>
+                    <p class="service-card__desc">Follow structured fat-loss plans designed for sustainable transformation.</p>
+                    <div class="service-card__border"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================= -->
+    <!-- MEMBERSHIP PLANS SECTION -->
+    <!-- ============================================= -->
+    <section class="plans" id="plans">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-label">Membership Plans</span>
+                <h2 class="section-title">Choose the Plan That<br><span class="text-accent">Fits Your Goals</span></h2>
+                <p class="section-subtitle">Flexible options for every fitness journey</p>
+            </div>
+
+            <div class="plans__grid">
+                <!-- Basic Plan -->
+                <div class="plan-card reveal-up" id="plan-basic">
+                    <div class="plan-card__header">
+                        <h3 class="plan-card__name">Basic Plan</h3>
+                        <p class="plan-card__tagline">Perfect for getting started</p>
+                    </div>
+                    <div class="plan-card__price">
+                        <span class="plan-card__currency">$</span>
+                        <span class="plan-card__amount">29</span>
+                        <span class="plan-card__period">/month</span>
+                    </div>
+                    <ul class="plan-card__features">
+                        <li class="plan-card__feature">
+                            <svg class="plan-card__check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            Access to gym floor
+                        </li>
+                        <li class="plan-card__feature">
+                            <svg class="plan-card__check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            Standard equipment usage
+                        </li>
+                        <li class="plan-card__feature">
+                            <svg class="plan-card__check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            Locker access
+                        </li>
+                        <li class="plan-card__feature">
+                            <svg class="plan-card__check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            5 days per week access
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn--outline btn--full" id="plan-basic-btn">Get Started</a>
+                </div>
+
+                <!-- Standard Plan (Featured) -->
+                <div class="plan-card plan-card--featured reveal-up" id="plan-standard">
+                    <div class="plan-card__badge">Most Popular</div>
+                    <div class="plan-card__header">
+                        <h3 class="plan-card__name">Standard Plan</h3>
+                        <p class="plan-card__tagline">Best value for results</p>
+                    </div>
+                    <div class="plan-card__price">
+                        <span class="plan-card__currency">$</span>
+                        <span class="plan-card__amount">59</span>
+                        <span class="plan-card__period">/month</span>
+                    </div>
+                    <ul class="plan-card__features">
+                        <li class="plan-card__feature">
+                            <svg class="plan-card__check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            Full gym access
+                        </li>
+                        <li class="plan-card__feature">
+                            <svg class="plan-card__check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            Group classes included
+                        </li>
+                        <li class="plan-card__feature">
+                            <svg class="plan-card__check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            Locker access
+                        </li>
+                        <li class="plan-card__feature">
+                            <svg class="plan-card__check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            Basic trainer support
+                        </li>
+                        <li class="plan-card__feature">
+                            <svg class="plan-card__check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            6 days per week access
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn--primary btn--full" id="plan-standard-btn">Get Started</a>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="plan-card reveal-up" id="plan-premium">
+                    <div class="plan-card__header">
+                        <h3 class="plan-card__name">Premium Plan</h3>
+                        <p class="plan-card__tagline">Ultimate fitness experience</p>
+                    </div>
+                    <div class="plan-card__price">
+                        <span class="plan-card__currency">$</span>
+                        <span class="plan-card__amount">99</span>
+                        <span class="plan-card__period">/month</span>
+                    </div>
+                    <ul class="plan-card__features">
+                        <li class="plan-card__feature">
+                            <svg class="plan-card__check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            Full gym access
+                        </li>
+                        <li class="plan-card__feature">
+                            <svg class="plan-card__check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            Personal trainer consultation
+                        </li>
+                        <li class="plan-card__feature">
+                            <svg class="plan-card__check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            Group classes
+                        </li>
+                        <li class="plan-card__feature">
+                            <svg class="plan-card__check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            Nutrition guidance
+                        </li>
+                        <li class="plan-card__feature">
+                            <svg class="plan-card__check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            Priority support
+                        </li>
+                        <li class="plan-card__feature">
+                            <svg class="plan-card__check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            Unlimited access
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn--outline btn--full" id="plan-premium-btn">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================= -->
+    <!-- TRAINERS SECTION -->
+    <!-- ============================================= -->
+    <section class="trainers" id="trainers">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-label">Expert Coaches</span>
+                <h2 class="section-title">Train With Professionals Who<br><span class="text-accent">Push You Forward</span></h2>
+                <p class="section-subtitle">Meet experienced fitness trainers dedicated to helping you build strength, discipline, and long-term results</p>
+                
+                <!-- Trainers Search & Filter -->
+                <div class="trainers__filter">
+                    <div class="search-box">
+                        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                        <input type="text" id="trainer-search" class="search-input" placeholder="Search trainers by name or specialty...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="trainers__grid" id="trainers-grid">
+                <div class="trainer-card reveal-up" id="trainer-jason">
+                    <div class="trainer-card__image-wrapper">
+                        <img src="assets/images/trainer-jason.png" alt="Jason Fernando - Strength Coach" class="trainer-card__image">
+                        <div class="trainer-card__overlay">
+                            <div class="trainer-card__socials">
+                                <a href="#" class="trainer-card__social" aria-label="Instagram">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                                </a>
+                                <a href="#" class="trainer-card__social" aria-label="Twitter">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                                </a>
+                                <a href="#" class="trainer-card__social" aria-label="LinkedIn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trainer-card__info">
+                        <h3 class="trainer-card__name">Jason Fernando</h3>
+                        <span class="trainer-card__role">Strength Coach</span>
+                        <p class="trainer-card__spec">Muscle Building Specialist</p>
+                    </div>
+                </div>
+
+                <div class="trainer-card reveal-up" id="trainer-ahamed">
+                    <div class="trainer-card__image-wrapper">
+                        <img src="assets/images/trainer-ahamed.png" alt="Ahamed Rizwan - Fat Loss Coach" class="trainer-card__image">
+                        <div class="trainer-card__overlay">
+                            <div class="trainer-card__socials">
+                                <a href="#" class="trainer-card__social" aria-label="Instagram">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                                </a>
+                                <a href="#" class="trainer-card__social" aria-label="Twitter">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                                </a>
+                                <a href="#" class="trainer-card__social" aria-label="LinkedIn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trainer-card__info">
+                        <h3 class="trainer-card__name">Ahamed Rizwan</h3>
+                        <span class="trainer-card__role">Fat Loss Coach</span>
+                        <p class="trainer-card__spec">Transformation Programs Expert</p>
+                    </div>
+                </div>
+
+                <div class="trainer-card reveal-up" id="trainer-kavinda">
+                    <div class="trainer-card__image-wrapper">
+                        <img src="assets/images/trainer-kavinda.png" alt="Kavinda Perera - Functional Trainer" class="trainer-card__image">
+                        <div class="trainer-card__overlay">
+                            <div class="trainer-card__socials">
+                                <a href="#" class="trainer-card__social" aria-label="Instagram">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                                </a>
+                                <a href="#" class="trainer-card__social" aria-label="Twitter">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                                </a>
+                                <a href="#" class="trainer-card__social" aria-label="LinkedIn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trainer-card__info">
+                        <h3 class="trainer-card__name">Kavinda Perera</h3>
+                        <span class="trainer-card__role">Functional Trainer</span>
+                        <p class="trainer-card__spec">Mobility & Conditioning Specialist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================= -->
+    <!-- CONTACT SECTION -->
+    <!-- ============================================= -->
+    <section class="contact" id="contact">
+        <div class="container contact__container">
+            <div class="contact__info reveal-left">
+                <span class="section-label">Contact Us</span>
+                <h2 class="section-title">Start Your Fitness<br><span class="text-accent">Journey Today</span></h2>
+                <p class="contact__text">
+                    Have questions? Ready to begin your membership? Reach out to us — we'd love to help you take the first step toward your fitness goals.
+                </p>
+
+                <div class="contact__details">
+                    <div class="contact__detail">
+                        <div class="contact__detail-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="contact__detail-title">Phone</h4>
+                            <p class="contact__detail-value">+94 77 123 4567</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__detail">
+                        <div class="contact__detail-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="contact__detail-title">Email</h4>
+                            <p class="contact__detail-value">info@fitnesssportscenter.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__detail">
+                        <div class="contact__detail-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="contact__detail-title">Location</h4>
+                            <p class="contact__detail-value">42 Sports Avenue, Colombo 05, Sri Lanka</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__detail">
+                        <div class="contact__detail-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="contact__detail-title">Opening Hours</h4>
+                            <p class="contact__detail-value">Mon – Sat: 5:00 AM – 10:00 PM<br>Sunday: 7:00 AM – 5:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact__form-wrapper reveal-right">
+                <form class="contact__form" id="contact-form">
+                    <h3 class="contact__form-title">Send Us a Message</h3>
+
+                    <div class="form-group">
+                        <label for="contact-name" class="form-label">Full Name</label>
+                        <input type="text" id="contact-name" class="form-input" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-email" class="form-label">Email Address</label>
+                        <input type="email" id="contact-email" class="form-input" placeholder="Enter your email address" required>
+                        <span class="form-error" id="email-error">Please enter a valid email.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-message" class="form-label">Message</label>
+                        <textarea id="contact-message" class="form-input form-textarea" placeholder="Tell us about your fitness goals..." rows="5" minlength="10" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary btn--full" id="contact-submit-btn">
+                        <span class="btn-text">Send Inquiry</span>
+                        <svg class="btn__icon btn-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                        <svg class="btn-spinner" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display: none;"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
+                    </button>
+
+                    <div class="form-feedback" id="form-feedback"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================= -->
+    <!-- FOOTER -->
+    <!-- ============================================= -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo">
+                        <img src="assets/images/logo.jpg" alt="Fitness Sports Center" class="footer__logo-img">
+                    </a>
+                    <p class="footer__tagline">Push Your Limits. Build Your Strength.<br>Become Your Best.</p>
+                    <div class="footer__socials">
+                        <a href="#" class="footer__social" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="#" class="footer__social" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="#" class="footer__social" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                        </a>
+                        <a href="#" class="footer__social" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.44 8.6.44 8.6.44s6.88 0 8.6-.44a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__links-title">Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#plans">Membership</a></li>
+                        <li><a href="#trainers">Trainers</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__links-title">Services</h4>
+                    <ul>
+                        <li><a href="#services">Strength Training</a></li>
+                        <li><a href="#services">Cardio Zone</a></li>
+                        <li><a href="#services">Personal Training</a></li>
+                        <li><a href="#services">Group Classes</a></li>
+                        <li><a href="#services">Nutrition Guidance</a></li>
+                        <li><a href="#services">Weight Loss</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__contact">
+                    <h4 class="footer__links-title">Contact Info</h4>
+                    <ul>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            42 Sports Avenue, Colombo 05
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            +94 77 123 4567
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            info@fitnesssportscenter.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2023 Fitness Sports Center. All Rights Reserved.</p>
+                <p class="footer__credits">Designed with 💪 for Champions</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
